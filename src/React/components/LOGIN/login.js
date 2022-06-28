@@ -11,7 +11,7 @@ const Login = () => {
         <>
             <div className="container-general-login">
                 <div className="container-slider-login">
-                    <span>El sistema màs preciso y exacto del mercado</span>
+                    <span>El sistema màs preciso y exacto del mercado.</span>
                     <img src={IMG1} className='img-slider-login'/>
                 </div>
                 <div className="container-info-login">
