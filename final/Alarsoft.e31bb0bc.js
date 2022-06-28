@@ -29687,7 +29687,7 @@ var Login = function Login() {
     className: "container-general-login"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "container-slider-login"
-  }, /*#__PURE__*/_react.default.createElement("span", null, "El sistema m\xE0s preciso y exacto del mercado"), /*#__PURE__*/_react.default.createElement("img", {
+  }, /*#__PURE__*/_react.default.createElement("span", null, "El sistema m\xE0s preciso y exacto del mercado."), /*#__PURE__*/_react.default.createElement("img", {
     src: _img.default,
     className: "img-slider-login"
   })), /*#__PURE__*/_react.default.createElement("div", {
@@ -29786,7 +29786,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49593" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "40707" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
