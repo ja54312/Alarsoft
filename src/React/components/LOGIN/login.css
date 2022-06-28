@@ -101,27 +101,4 @@
 .container-contactanos-login span{
     font-weight: bold;
     color: blueviolet;
-}/*-----Fuente-----*/
-
-/*-----VARIABLES-----*/
-:root {
-    --blanco:#FFFFFF;
-    --azul:#0E90F2;
-    --rojo:red;
-    --main-color:#2B2F32;
-    --verde:#BFD9B6;
-    --colortabla:orange;
-    --fuente-principal: Nunito ;
-}
-
-/*-----BASE-----*/
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-/*-----CSS-BASE-----*/
-html{
-    font-size: 62.5%;
-    font-family:var(--fuente);
 }

@@ -29584,7 +29584,13 @@ var Prueba = function Prueba() {
 
 var _default = Prueba;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js"}],"src/assets/DWLogo.png":[function(require,module,exports) {
+module.exports = "/DWLogo.6039c570.png";
+},{}],"src/assets/img1.png":[function(require,module,exports) {
+module.exports = "/img1.8753b51c.png";
+},{}],"src/assets/img2.png":[function(require,module,exports) {
+module.exports = "/img2.1040e3d7.png";
+},{}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -29651,7 +29657,76 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/styles/base.css":[function(require,module,exports) {
+},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/React/components/LOGIN/login.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/React/components/LOGIN/login.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _DWLogo = _interopRequireDefault(require("../../../assets/DWLogo.png"));
+
+var _img = _interopRequireDefault(require("../../../assets/img1.png"));
+
+var _img2 = _interopRequireDefault(require("../../../assets/img2.png"));
+
+require("./login.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Login = function Login() {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
+    className: "container-general-login"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "container-slider-login"
+  }, /*#__PURE__*/_react.default.createElement("span", null, "El sistema m\xE0s preciso y exacto del mercado"), /*#__PURE__*/_react.default.createElement("img", {
+    src: _img.default,
+    className: "img-slider-login"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container-info-login"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "container-logo-login"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    src: _DWLogo.default,
+    className: "img-logo-login"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container-title-login"
+  }, /*#__PURE__*/_react.default.createElement("span", null, "Bienvenido de vuelta")), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container-form-login"
+  }, /*#__PURE__*/_react.default.createElement("form", {
+    className: "form-login"
+  }, /*#__PURE__*/_react.default.createElement("label", {
+    className: "label-login"
+  }, "Usuario"), /*#__PURE__*/_react.default.createElement("input", {
+    type: "text",
+    className: "input-login",
+    placeholder: "Ingresa tu usuario"
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container-label-contrase\xF1a"
+  }, /*#__PURE__*/_react.default.createElement("label", {
+    className: "label-login"
+  }, "Contrase\xF1a"), /*#__PURE__*/_react.default.createElement("span", null, "\xBFHas olvidado tu contrase\xF1a?")), /*#__PURE__*/_react.default.createElement("input", {
+    type: "text",
+    className: "input-login",
+    placeholder: "Ingresa tu contrase\xF1a"
+  }), /*#__PURE__*/_react.default.createElement("button", {
+    className: "button-login"
+  }, "Ingresar"))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container-contactanos-login"
+  }, /*#__PURE__*/_react.default.createElement("p", null, "\xBFTodavia no cuentas con una cuenta?", /*#__PURE__*/_react.default.createElement("span", null, "CONTACTANOS"))))));
+};
+
+var _default = Login;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","../../../assets/DWLogo.png":"src/assets/DWLogo.png","../../../assets/img1.png":"src/assets/img1.png","../../../assets/img2.png":"src/assets/img2.png","./login.css":"src/React/components/LOGIN/login.css"}],"src/styles/base.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -29670,18 +29745,20 @@ var _reactDom = _interopRequireDefault(require("react-dom"));
 
 var _prueba = _interopRequireDefault(require("./src/React/components/prueba/prueba"));
 
+var _login = _interopRequireDefault(require("./src/React/components/LOGIN/login"));
+
 require("./src/styles/base.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function App() {
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_prueba.default, null));
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement(_login.default, null));
 }
 
 var entryPointMalta = document.getElementById("root");
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(App, null), entryPointMalta);
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./src/React/components/prueba/prueba":"src/React/components/prueba/prueba.js","./src/styles/base.css":"src/styles/base.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./src/React/components/prueba/prueba":"src/React/components/prueba/prueba.js","./src/React/components/LOGIN/login":"src/React/components/LOGIN/login.js","./src/styles/base.css":"src/styles/base.css"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -29709,7 +29786,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59985" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49593" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
