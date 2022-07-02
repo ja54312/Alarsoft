@@ -1,7 +1,7 @@
 import React from "react";
-import Logo from '../../../assets/DWLogo.png';
-import IMG1 from '../../../assets/img1.png';
-import IMG2 from '../../../assets/img2.png';
+import Logo from '../../../assets/logo.png';
+import IMG1 from '../../../assets/cdmxwallpaper.png';
+import IMG2 from '../../../assets/cdmxwallpaper2.png';
 import "./login.css"
 
 const Login = () => {

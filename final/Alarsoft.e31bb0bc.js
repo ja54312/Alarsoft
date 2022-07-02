@@ -29584,12 +29584,12 @@ var Prueba = function Prueba() {
 
 var _default = Prueba;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"src/assets/DWLogo.png":[function(require,module,exports) {
-module.exports = "/DWLogo.6039c570.png";
-},{}],"src/assets/img1.png":[function(require,module,exports) {
-module.exports = "/img1.8753b51c.png";
-},{}],"src/assets/img2.png":[function(require,module,exports) {
-module.exports = "/img2.1040e3d7.png";
+},{"react":"node_modules/react/index.js"}],"src/assets/logo.png":[function(require,module,exports) {
+module.exports = "/logo.8244f1f8.png";
+},{}],"src/assets/cdmxwallpaper.png":[function(require,module,exports) {
+module.exports = "/cdmxwallpaper.75fb71f6.png";
+},{}],"src/assets/cdmxwallpaper2.png":[function(require,module,exports) {
+module.exports = "/cdmxwallpaper2.58668415.png";
 },{}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
@@ -29672,11 +29672,11 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _DWLogo = _interopRequireDefault(require("../../../assets/DWLogo.png"));
+var _logo = _interopRequireDefault(require("../../../assets/logo.png"));
 
-var _img = _interopRequireDefault(require("../../../assets/img1.png"));
+var _cdmxwallpaper = _interopRequireDefault(require("../../../assets/cdmxwallpaper.png"));
 
-var _img2 = _interopRequireDefault(require("../../../assets/img2.png"));
+var _cdmxwallpaper2 = _interopRequireDefault(require("../../../assets/cdmxwallpaper2.png"));
 
 require("./login.css");
 
@@ -29688,14 +29688,14 @@ var Login = function Login() {
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "container-slider-login"
   }, /*#__PURE__*/_react.default.createElement("span", null, "El sistema m\xE0s preciso y exacto del mercado."), /*#__PURE__*/_react.default.createElement("img", {
-    src: _img.default,
+    src: _cdmxwallpaper.default,
     className: "img-slider-login"
   })), /*#__PURE__*/_react.default.createElement("div", {
     className: "container-info-login"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "container-logo-login"
   }, /*#__PURE__*/_react.default.createElement("img", {
-    src: _DWLogo.default,
+    src: _logo.default,
     className: "img-logo-login"
   })), /*#__PURE__*/_react.default.createElement("div", {
     className: "container-title-login"
@@ -29726,7 +29726,7 @@ var Login = function Login() {
 
 var _default = Login;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../../../assets/DWLogo.png":"src/assets/DWLogo.png","../../../assets/img1.png":"src/assets/img1.png","../../../assets/img2.png":"src/assets/img2.png","./login.css":"src/React/components/LOGIN/login.css"}],"src/styles/base.css":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../../../assets/logo.png":"src/assets/logo.png","../../../assets/cdmxwallpaper.png":"src/assets/cdmxwallpaper.png","../../../assets/cdmxwallpaper2.png":"src/assets/cdmxwallpaper2.png","./login.css":"src/React/components/LOGIN/login.css"}],"src/styles/base.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -29786,7 +29786,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38667" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "33661" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

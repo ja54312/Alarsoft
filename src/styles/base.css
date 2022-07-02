@@ -1,14 +1,12 @@
 /*-----Fuente-----*/
-
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;500;700&display=swap');
 /*-----VARIABLES-----*/
 :root {
     --blanco:#FFFFFF;
-    --azul:#0E90F2;
-    --rojo:red;
-    --main-color:#2B2F32;
-    --verde:#BFD9B6;
-    --colortabla:orange;
-    --fuente-principal: Nunito ;
+    --main-color:#142C64;
+    --inputs:#C4CAD8;
+    --fuente-principal: 'Mulish';
+    --fuente-secundaria:'Arial';
 }
 
 /*-----BASE-----*/
@@ -20,5 +18,5 @@
 /*-----CSS-BASE-----*/
 html{
     font-size: 62.5%;
-    font-family:var(--fuente);
+    font-family:var(--fuente-principal);
 }
