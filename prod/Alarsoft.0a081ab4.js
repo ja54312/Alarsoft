@@ -15,11 +15,11 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"./cjs/react-dom.production.min.js":"jF7N"}],"sWT1":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e=t(require("react"));function t(e){return e&&e.__esModule?e:{default:e}}var r=function(){return e.default.createElement(e.default.Fragment,null,e.default.createElement("h2",null,"Prueba"))},u=r;exports.default=u;
 },{"react":"HdMw"}],"HXgs":[function(require,module,exports) {
-module.exports="https://ja54312.github.io/alarsoft/DWLogo.bb8bc927.png";
+module.exports="https://ja54312.github.io/Alarsoft/DWLogo.bb8bc927.png";
 },{}],"qIOQ":[function(require,module,exports) {
-module.exports="https://ja54312.github.io/alarsoft/img1.e411c49e.png";
+module.exports="https://ja54312.github.io/Alarsoft/img1.e411c49e.png";
 },{}],"xY0U":[function(require,module,exports) {
-module.exports="https://ja54312.github.io/alarsoft/img2.0e46360c.png";
+module.exports="https://ja54312.github.io/Alarsoft/img2.0e46360c.png";
 },{}],"jI8Y":[function(require,module,exports) {
 
 },{}],"N7zD":[function(require,module,exports) {
