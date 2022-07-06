@@ -29590,6 +29590,10 @@ module.exports = "/logo.8244f1f8.png";
 module.exports = "/cdmxwallpaper.75fb71f6.png";
 },{}],"src/assets/cdmxwallpaper2.png":[function(require,module,exports) {
 module.exports = "/cdmxwallpaper2.58668415.png";
+},{}],"src/assets/Ojo.png":[function(require,module,exports) {
+module.exports = "/Ojo.e7f902c9.png";
+},{}],"src/assets/Ojo2.png":[function(require,module,exports) {
+module.exports = "/Ojo2.f13e44db.png";
 },{}],"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
@@ -29677,6 +29681,10 @@ var _logo = _interopRequireDefault(require("../../../assets/logo.png"));
 var _cdmxwallpaper = _interopRequireDefault(require("../../../assets/cdmxwallpaper.png"));
 
 var _cdmxwallpaper2 = _interopRequireDefault(require("../../../assets/cdmxwallpaper2.png"));
+
+var _Ojo = _interopRequireDefault(require("../../../assets/Ojo.png"));
+
+var _Ojo2 = _interopRequireDefault(require("../../../assets/Ojo2.png"));
 
 require("./login.css");
 
@@ -29779,14 +29787,19 @@ var Login = function Login() {
     className: "container-label-contrase\xF1a"
   }, /*#__PURE__*/_react.default.createElement("label", {
     className: "label-login"
-  }, "Contrase\xF1a"), /*#__PURE__*/_react.default.createElement("span", null, "\xBFHas olvidado tu contrase\xF1a?")), /*#__PURE__*/_react.default.createElement("input", {
+  }, "Contrase\xF1a"), /*#__PURE__*/_react.default.createElement("span", null, "\xBFHas olvidado tu contrase\xF1a?")), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container-input-contrase\xF1a"
+  }, /*#__PURE__*/_react.default.createElement("input", {
     type: "text",
     className: "input-login",
     placeholder: "Ingresa tu contrase\xF1a",
     onChange: function onChange(e) {
       return setPassword(e.target.value);
     }
-  }), /*#__PURE__*/_react.default.createElement("button", {
+  }), /*#__PURE__*/_react.default.createElement("img", {
+    src: _Ojo.default,
+    className: "ojo"
+  })), /*#__PURE__*/_react.default.createElement("button", {
     className: "button-login"
   }, "Ingresar"))), /*#__PURE__*/_react.default.createElement("div", {
     className: "container-contactanos-login"
@@ -29795,7 +29808,7 @@ var Login = function Login() {
 
 var _default = Login;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../../../assets/logo.png":"src/assets/logo.png","../../../assets/cdmxwallpaper.png":"src/assets/cdmxwallpaper.png","../../../assets/cdmxwallpaper2.png":"src/assets/cdmxwallpaper2.png","./login.css":"src/React/components/LOGIN/login.css"}],"src/styles/base.css":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../../../assets/logo.png":"src/assets/logo.png","../../../assets/cdmxwallpaper.png":"src/assets/cdmxwallpaper.png","../../../assets/cdmxwallpaper2.png":"src/assets/cdmxwallpaper2.png","../../../assets/Ojo.png":"src/assets/Ojo.png","../../../assets/Ojo2.png":"src/assets/Ojo2.png","./login.css":"src/React/components/LOGIN/login.css"}],"src/styles/base.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -29855,7 +29868,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35765" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45035" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Logo from '../../../assets/logo.png';
 import IMG1 from '../../../assets/cdmxwallpaper.png';
 import IMG2 from '../../../assets/cdmxwallpaper2.png';
+import OJO from '../../../assets/Ojo.png';
+import OJO2 from '../../../assets/Ojo2.png';
 import "./login.css"
 
 const Login = () => {
@@ -63,12 +65,15 @@ const Login = () => {
                                 <label className="label-login">Contraseña</label>
                                 <span>¿Has olvidado tu contraseña?</span>
                             </div>
-                            <input
-                                type='text'
-                                className="input-login"
-                                placeholder="Ingresa tu contraseña"
-                                onChange={(e) => setPassword(e.target.value)}
-                            />
+                            <div className="container-input-contraseña">
+                                <input
+                                    type='text'
+                                    className="input-login"
+                                    placeholder="Ingresa tu contraseña"
+                                    onChange={(e) => setPassword(e.target.value)}
+                                />
+                                <img src={OJO} className="ojo"/>
+                            </div>
                             <button
                                 className="button-login"
                             >Ingresar</button>
