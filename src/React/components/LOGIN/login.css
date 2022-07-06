@@ -50,6 +50,7 @@
     width: 10px;
     border-radius: 10px;
     border: 1px solid var(--blanco);
+    cursor: pointer;
 }
 .punto-seleccionado {
     background-color: var(--blanco);

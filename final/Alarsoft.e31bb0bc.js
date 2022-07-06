@@ -29683,37 +29683,30 @@ require("./login.css");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Login = function Login() {
-  var grande = document.getElementById('tractionItems');
-  var punto = document.querySelectorAll('.puntos');
-  console.log(grande, "grande");
-  console.log(punto, "punto"); // Recorrer TODOS los punto
+  var PUNTOS = function PUNTOS(i) {
+    var grande = document.querySelector('.tractionItems');
+    var punto = document.querySelectorAll('.punto'); // Calculando el espacio que debe DESPLAZARSE el GRANDE
 
-  punto.forEach(function (i) {
-    // Asignamos un CLICK a cadaPunto
-    punto[i].addEventListener('click', function () {
-      console.log('click punto'); // Guardar la posición de ese PUNTO
+    var operacion = i * -100; // MOVEMOS el grand
 
-      var posicion = i; // Calculando el espacio que debe DESPLAZARSE el GRANDE
+    grande.style.transform = "translateX(".concat(operacion, "%)"); // Quitamos la clase ACTIVO a TODOS los punto
+    // Añadir la clase activo en el punto que hemos hecho CLICK
 
-      var operacion = posicion * -100; // MOVEMOS el grand
+    if (i === 0) {
+      punto[0].classList.add('punto-seleccionado');
+      punto[1].classList.remove('punto-seleccionado');
+    } else {
+      punto[1].classList.add('punto-seleccionado');
+      punto[0].classList.remove('punto-seleccionado');
+    }
+  };
 
-      grande.style.transform = "translateX(".concat(operacion, "%)"); // Recorremos TODOS los punto
-
-      punto.forEach(function (i) {
-        // Quitamos la clase ACTIVO a TODOS los punto
-        punto[i].classList.remove('punto-seleccionado');
-      }); // Añadir la clase activo en el punto que hemos hecho CLICK
-
-      punto[i].classList.add('punto-seleccionado');
-    });
-  });
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
     className: "container-general-login"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "container-slider-login"
   }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "tractionItems",
-    id: "tractionItems"
+    className: "tractionItems"
   }, /*#__PURE__*/_react.default.createElement("img", {
     src: _cdmxwallpaper.default,
     className: "img-slider-login"
@@ -29725,9 +29718,15 @@ var Login = function Login() {
   }, /*#__PURE__*/_react.default.createElement("span", null, "El sistema m\xE0s preciso y exacto del mercado."), /*#__PURE__*/_react.default.createElement("div", {
     className: "container-puntos-slider"
   }, /*#__PURE__*/_react.default.createElement("div", {
-    className: " puntos punto punto-seleccionado"
+    className: "punto punto-seleccionado",
+    onClick: function onClick() {
+      return PUNTOS(0);
+    }
   }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "puntos punto"
+    className: "punto",
+    onClick: function onClick() {
+      return PUNTOS(1);
+    }
   })))), /*#__PURE__*/_react.default.createElement("div", {
     className: "container-info-login"
   }, /*#__PURE__*/_react.default.createElement("div", {
@@ -29824,7 +29823,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39921" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35229" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

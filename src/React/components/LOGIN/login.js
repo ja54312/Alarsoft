@@ -6,32 +6,23 @@ import "./login.css"
 
 const Login = () => {
 
-    const grande  = document.getElementById('tractionItems');
-    const punto  = document.querySelectorAll('.puntos');
-    console.log(grande,"grande")
-    console.log(punto,"punto")
-     // Recorrer TODOS los punto
-     punto.forEach( (  i )=> {
-        // Asignamos un CLICK a cadaPunto
-        punto[i].addEventListener('click',()=>{
-            console.log('click punto')
-          // Guardar la posición de ese PUNTO
-          let posicion  = i
-          // Calculando el espacio que debe DESPLAZARSE el GRANDE
-          let operacion = posicion * -100
-  
-          // MOVEMOS el grand
-          grande.style.transform = `translateX(${ operacion }%)`
-  
-          // Recorremos TODOS los punto
-          punto.forEach( ( i )=>{
+    const PUNTOS = (i) =>{ 
+        const grande  = document.querySelector('.tractionItems');
+        const punto  = document.querySelectorAll('.punto');
+             // Calculando el espacio que debe DESPLAZARSE el GRANDE
+             let operacion = i * -100
+             // MOVEMOS el grand
+             grande.style.transform = `translateX(${ operacion }%)`
             // Quitamos la clase ACTIVO a TODOS los punto
-            punto[i].classList.remove('punto-seleccionado')
-          })
-          // Añadir la clase activo en el punto que hemos hecho CLICK
-          punto[i].classList.add('punto-seleccionado')
-        })
-      })
+            // Añadir la clase activo en el punto que hemos hecho CLICK
+            if(i=== 0){
+                punto[0].classList.add('punto-seleccionado')
+                punto[1].classList.remove('punto-seleccionado')
+            }else{
+                punto[1].classList.add('punto-seleccionado')
+                punto[0].classList.remove('punto-seleccionado')
+            }
+    }
 
   
 
@@ -40,15 +31,15 @@ const Login = () => {
         <>
             <div className="container-general-login">
                 <div className="container-slider-login">
-                    <div className="tractionItems" id="tractionItems">
+                    <div className="tractionItems">
                         <img src={IMG1} className='img-slider-login'/>
                         <img src={IMG2} className='img-slider-login'/>
                     </div>
                     <div className="container-slider-bottom">
                         <span>El sistema màs preciso y exacto del mercado.</span>
                         <div className="container-puntos-slider">
-                            <div className=" puntos punto punto-seleccionado"></div>
-                            <div className="puntos punto"></div>
+                            <div className="punto punto-seleccionado" onClick={()=>PUNTOS(0)}></div>
+                            <div className="punto" onClick={()=>PUNTOS(1)}></div>
                         </div>
                     </div>
                 </div>
