@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from '../../../assets/logo.png';
 import IMG1 from '../../../assets/cdmxwallpaper.png';
 import IMG2 from '../../../assets/cdmxwallpaper2.png';
 import "./login.css"
 
 const Login = () => {
+
+    const [user,setUser] = useState()
+    const [password,setPassword] = useState()
 
     const PUNTOS = (i) =>{ 
         const grande  = document.querySelector('.tractionItems');
@@ -23,9 +26,6 @@ const Login = () => {
                 punto[0].classList.remove('punto-seleccionado')
             }
     }
-
-  
-
 
     return(
         <>
@@ -57,6 +57,7 @@ const Login = () => {
                                 type='text'
                                 className="input-login"
                                 placeholder="Ingresa tu usuario"
+                                onChange={(e) => setUser(e.target.value)}
                             />
                             <div className="container-label-contraseña">
                                 <label className="label-login">Contraseña</label>
@@ -66,6 +67,7 @@ const Login = () => {
                                 type='text'
                                 className="input-login"
                                 placeholder="Ingresa tu contraseña"
+                                onChange={(e) => setPassword(e.target.value)}
                             />
                             <button
                                 className="button-login"
