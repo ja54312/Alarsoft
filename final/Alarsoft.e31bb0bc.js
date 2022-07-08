@@ -29715,7 +29715,8 @@ var Login = function Login() {
   var _useState3 = (0, _react.useState)(),
       _useState4 = _slicedToArray(_useState3, 2),
       password = _useState4[0],
-      setPassword = _useState4[1];
+      setPassword = _useState4[1]; //Funcion para cambio de puntos en Slider
+
 
   var PUNTOS = function PUNTOS(i) {
     var grande = document.querySelector('.tractionItems');
@@ -29733,6 +29734,12 @@ var Login = function Login() {
       punto[1].classList.add('punto-seleccionado');
       punto[0].classList.remove('punto-seleccionado');
     }
+  }; //Funcion para cambiar Ojo de contraseña
+
+
+  var Ojos = function Ojos() {
+    var divojos = document.getElementById('ojos');
+    var divcontraseña = document.getElementById('contraseña');
   };
 
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
@@ -29776,30 +29783,40 @@ var Login = function Login() {
     className: "form-login"
   }, /*#__PURE__*/_react.default.createElement("label", {
     className: "label-login"
-  }, "Usuario"), /*#__PURE__*/_react.default.createElement("input", {
+  }, "Usuario"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container-general-inputs"
+  }, /*#__PURE__*/_react.default.createElement("input", {
+    id: "Usuario",
     type: "text",
     className: "input-login",
     placeholder: "Ingresa tu usuario",
     onChange: function onChange(e) {
       return setUser(e.target.value);
     }
-  }), /*#__PURE__*/_react.default.createElement("div", {
+  })), /*#__PURE__*/_react.default.createElement("div", {
     className: "container-label-contrase\xF1a"
   }, /*#__PURE__*/_react.default.createElement("label", {
     className: "label-login"
   }, "Contrase\xF1a"), /*#__PURE__*/_react.default.createElement("span", null, "\xBFHas olvidado tu contrase\xF1a?")), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container-general-inputs"
+  }, /*#__PURE__*/_react.default.createElement("div", {
     className: "container-input-contrase\xF1a"
   }, /*#__PURE__*/_react.default.createElement("input", {
-    type: "text",
+    id: "contrase\xF1a",
+    type: "password",
     className: "input-login",
     placeholder: "Ingresa tu contrase\xF1a",
     onChange: function onChange(e) {
       return setPassword(e.target.value);
     }
-  }), /*#__PURE__*/_react.default.createElement("img", {
+  }), /*#__PURE__*/_react.default.createElement("span", {
+    className: "container-ojo"
+  }, /*#__PURE__*/_react.default.createElement("img", {
+    id: "ojos",
     src: _Ojo.default,
-    className: "ojo"
-  })), /*#__PURE__*/_react.default.createElement("button", {
+    className: "ojo",
+    onClick: Ojos
+  })))), /*#__PURE__*/_react.default.createElement("button", {
     className: "button-login"
   }, "Ingresar"))), /*#__PURE__*/_react.default.createElement("div", {
     className: "container-contactanos-login"
@@ -29868,7 +29885,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45035" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44353" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

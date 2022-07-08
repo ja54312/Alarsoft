@@ -11,6 +11,7 @@ const Login = () => {
     const [user,setUser] = useState()
     const [password,setPassword] = useState()
 
+    //Funcion para cambio de puntos en Slider
     const PUNTOS = (i) =>{ 
         const grande  = document.querySelector('.tractionItems');
         const punto  = document.querySelectorAll('.punto');
@@ -27,6 +28,12 @@ const Login = () => {
                 punto[1].classList.add('punto-seleccionado')
                 punto[0].classList.remove('punto-seleccionado')
             }
+    }
+
+    //Funcion para cambiar Ojo de contraseña
+    const Ojos = () =>{
+        const divojos = document.getElementById('ojos')
+        const divcontraseña = document.getElementById('contraseña')
     }
 
     return(
@@ -55,24 +62,32 @@ const Login = () => {
                     <div className="container-form-login">
                         <form className="form-login">
                             <label className="label-login">Usuario</label>
-                            <input
-                                type='text'
-                                className="input-login"
-                                placeholder="Ingresa tu usuario"
-                                onChange={(e) => setUser(e.target.value)}
-                            />
+                            <div className="container-general-inputs">
+                                <input
+                                    id="Usuario"
+                                    type='text'
+                                    className="input-login"
+                                    placeholder="Ingresa tu usuario"
+                                    onChange={(e) => setUser(e.target.value)}
+                                />
+                            </div>
                             <div className="container-label-contraseña">
                                 <label className="label-login">Contraseña</label>
                                 <span>¿Has olvidado tu contraseña?</span>
                             </div>
-                            <div className="container-input-contraseña">
-                                <input
-                                    type='text'
-                                    className="input-login"
-                                    placeholder="Ingresa tu contraseña"
-                                    onChange={(e) => setPassword(e.target.value)}
-                                />
-                                <img src={OJO} className="ojo"/>
+                            <div className="container-general-inputs">
+                                <div className="container-input-contraseña">
+                                    <input
+                                        id="contraseña"
+                                        type='password'
+                                        className="input-login"
+                                        placeholder="Ingresa tu contraseña"
+                                        onChange={(e) => setPassword(e.target.value)}
+                                    />
+                                    <span className="container-ojo">
+                                        <img  id="ojos" src={OJO} className="ojo" onClick={Ojos}/>
+                                    </span>
+                                </div>
                             </div>
                             <button
                                 className="button-login"

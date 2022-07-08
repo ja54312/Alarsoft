@@ -119,8 +119,10 @@
     border: none;
     border-radius: 5px;
     padding-left: 15px;
-    margin-bottom: 25px;
     font-size: 23px;
+}
+.input-login:focus-visible{
+    outline:none;
 }
 .container-label-contraseña{
     display: flex;
@@ -128,14 +130,28 @@
     align-items: flex-end;
     width: 100%;
 }
+.container-general-inputs{
+    margin-bottom: 25px;
+    width: 100%;
+}
 .container-input-contraseña{
     display: flex;
+    position: relative;
+    width: 100%;
+    background-color: var(--inputs);
+    align-items: center;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+.container-ojo{
+    -webkit-box-align: center;
+    align-items: center;
 }
 .ojo{
-    width: 15px;
-    height: 15px;
+    width: 25px;
+    /* height: 15px;
     position: fixed;
-    align-self: center;
+    align-self: center; */
 }
 .button-login{
     color: var(--blanco);
@@ -145,6 +161,7 @@
     height: 40px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 .container-contactanos-login{
     display: flex;
