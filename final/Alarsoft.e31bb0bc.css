@@ -149,9 +149,6 @@
 }
 .ojo{
     width: 25px;
-    /* height: 15px;
-    position: fixed;
-    align-self: center; */
 }
 .button-login{
     color: var(--blanco);
@@ -176,6 +173,16 @@
 .container-contactanos-login span{
     font-weight: bold;
     color: var(--main-color);
+}
+/*MEDIA QUERIES*/
+@media screen and (max-width:1023px){
+    .container-slider-login{
+        display: none;
+    }
+    .container-info-login{
+        width: 100%;
+        margin-top: 5px;
+    }
 }/*-----Fuente-----*/
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;500;700&display=swap');
 /*-----VARIABLES-----*/

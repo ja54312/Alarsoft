@@ -29739,7 +29739,7 @@ var Login = function Login() {
 
   var Ojos = function Ojos() {
     var divojos = document.getElementById('ojos');
-    var divcontraseña = document.getElementById('contraseña');
+    var divcontraseña = document.getElementById('contraseña'); //divcontraseña.type('text')
   };
 
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
@@ -29885,7 +29885,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44353" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "44479" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

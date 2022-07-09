@@ -34,6 +34,7 @@ const Login = () => {
     const Ojos = () =>{
         const divojos = document.getElementById('ojos')
         const divcontraseña = document.getElementById('contraseña')
+        //divcontraseña.type('text')
     }
 
     return(
